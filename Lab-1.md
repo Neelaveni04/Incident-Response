@@ -70,19 +70,20 @@ Failure Reason: "Unknown user name or bad password"
     New-NetFirewallRule -DisplayName "Block Attacker" -Direction Inbound -RemoteAddress <Kali_IP> 
 
     -Action Block
-    ![alt text](image-2.png)
-    ![alt text](image-3.png)
-    ![alt text](image-4.png)
+   
+   ![alt text](image-2.png)
+   ![alt text](image-3.png)
+   ![alt text](image-4.png)
 
     after blocking ip we noticed that tcp/3389 filtered
 
     ![alt text](image-6.png)
     
 
-5. Collect Evidence:
+6. Collect Evidence:
      relevant Event Logs
      ![alt text](image-5.png)
 
-6. Report Incident:
+7. Report Incident:
      a brief report with findings and actions taken
 
