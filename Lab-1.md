@@ -87,3 +87,33 @@ Failure Reason: "Unknown user name or bad password"
 7. Report Incident:
      a brief report with findings and actions taken
 
+
+#  Incident Report – Lab 1
+
+## Incident Title: Unauthorized Access Attempt (Lab-1)
+
+## Findings
+- Detected multiple login attempts from suspicious IP using RDP service.  
+- Firewall logs confirmed blocked traffic on RDP port (3389).    
+- Nmap scan from attacker system revealed open ports on Windows VM.  
+- Event Viewer logs showed failed login attempts (Event ID 4625).  
+
+## Actions Taken
+- Applied firewall rule to block RDP access from untrusted sources.  
+- Verified that the rule was working by testing with attacker system (connection denied).  
+- Collected relevant logs (firewall + Event Viewer) for evidence.    
+- Ensured system remained uncompromised by reviewing additional security logs.  
+
+## Conclusion
+The incident was successfully contained.  
+No unauthorized access was achieved.  
+Firewall rules and monitoring confirmed the attack was blocked.
+
+
+
+
+
+  
+
+
+
